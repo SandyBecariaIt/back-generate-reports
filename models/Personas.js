@@ -1,0 +1,32 @@
+const mongoose = require('mongoose');
+
+const PersonaSchema = mongoose.Schema({
+    nombre: {
+        type: String,
+        required: true
+    },
+    apellido_pat: {
+        type: String,
+        required: true
+    },
+    apellido_mat: {
+        type: String,
+        required: true
+    },
+    edad: {
+        type: Number,
+        required: true
+    }, 
+    sexo: {
+        type: String,
+        required: true
+    },
+    fechaCreacion:{
+        type: Date,
+        default: Date.now()
+    }
+ 
+});
+
+
+module.exports = mongoose.model('Persona', PersonaSchema);
