@@ -1,5 +1,4 @@
 const Persona = require("../models/Personas");
-const Empleado = require("../models/Empleado");
 
 exports.crearPersona = async (req, res) =>{
     

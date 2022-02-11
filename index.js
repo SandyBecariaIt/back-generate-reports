@@ -11,12 +11,13 @@ app.use(cors())
 app.use(express.json());
 
 app.use('/api/personas', require('./routes/personas'));
+app.use('/api/empleados', require('./routes/empleado'));
 
 //DEFINIMOS RUTA PRINCIPAL
-/*app.get('/', (req,res)=>{
-    res.send('Hola Mundo'); 
-})*/
+/* app.get('/', (req,res)=>{
+  res.send('Hola Mundo'); 
+}) */
 
-app.listen(4001, ()=> {
-    console.log('El servidor esta corriendo perfectamente ')
+app.listen(4000, ()=> {
+  console.log('El servidor esta corriendo perfectamente ')
 })

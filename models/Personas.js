@@ -1,10 +1,6 @@
 const mongoose = require('mongoose');
 
 const PersonaSchema = mongoose.Schema({
-    Id_usuario: {
-      type: String,
-      required: true
-    },
     nombre: {
         type: String,
         required: true
