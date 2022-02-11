@@ -17,6 +17,6 @@ app.use('/api/personas', require('./routes/personas'));
     res.send('Hola Mundo'); 
 })*/
 
-app.listen(4000, ()=> {
+app.listen(4001, ()=> {
     console.log('El servidor esta corriendo perfectamente ')
 })

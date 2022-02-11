@@ -21,8 +21,8 @@ exports.crearPersona = async (req, res) =>{
 
 exports.obtenerPersonas = async (req, res) =>{
     try {
-        const empleado = await Empleado.find();
-        res.json(empleado)
+        const persona = await Persona.find();
+        res.json(persona)
     } catch (error) {
         console.log(error);
         res.status(500).send('Hubo un error');
@@ -56,12 +56,10 @@ exports.actualizarPersona = async(req, res)=>{
 
 }
 exports.obtenerPersona = async(req, res)=>{
- 
     try {
         let persona = await Persona.findById(req.params.id);
         if (!persona) {
             res.status(404).json({msg:'No existe la persona' })
-
         }
       
         res.json(persona);

@@ -1,6 +1,10 @@
 const mongoose = require('mongoose');
 
 const PersonaSchema = mongoose.Schema({
+    Id_usuario: {
+      type: String,
+      required: true
+    },
     nombre: {
         type: String,
         required: true
@@ -18,8 +22,8 @@ const PersonaSchema = mongoose.Schema({
         required: true
     }, 
     sexo: {
-        type: String,
-        required: true
+      type: String,
+      required: true
     },
     fechaCreacion:{
         type: Date,
